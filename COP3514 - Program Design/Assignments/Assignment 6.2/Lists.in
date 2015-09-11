@@ -1,0 +1,24 @@
+10
+11 22 33 4 58 6 72 8 49 120
+
+Insert 10 7
+Move 3 7
+Move 7 3
+Move 0 2
+Move 4 0
+Delete 9 0
+Delete 5 9
+Delete 3 1
+Delete 1 0
+Delete 0 1
+Insert 7 9
+Insert 10 11
+Merge 3 4
+Merge 0 1
+Merge 1 0
+
+Insert 0 1
+Insert 0 7
+
+Move 0 4
+Move 3 0
