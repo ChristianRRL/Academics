@@ -1,0 +1,27 @@
+﻿  main.cpp
+c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 3\cop4350 - project 3.2\cop4350 - project 3\circularlinkedlist.h(229): error C2065: '_last' : undeclared identifier
+          c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 3\cop4350 - project 3.2\cop4350 - project 3\circularlinkedlist.h(214) : while compiling class template member function 'bool List<int>::insert(const T &,const int &)'
+          with
+          [
+              T=int
+          ]
+          c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 3\cop4350 - project 3.2\cop4350 - project 3\main.cpp(172) : see reference to function template instantiation 'bool List<int>::insert(const T &,const int &)' being compiled
+          with
+          [
+              T=int
+          ]
+          c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 3\cop4350 - project 3.2\cop4350 - project 3\main.cpp(157) : see reference to class template instantiation 'List<int>' being compiled
+c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 3\cop4350 - project 3.2\cop4350 - project 3\circularlinkedlist.h(230): error C2065: '_last' : undeclared identifier
+c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 3\cop4350 - project 3.2\cop4350 - project 3\circularlinkedlist.h(230): error C2227: left of '->next' must point to class/struct/union/generic type
+          type is 'unknown-type'
+c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 3\cop4350 - project 3.2\cop4350 - project 3\circularlinkedlist.h(235): error C2065: '_last' : undeclared identifier
+c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 3\cop4350 - project 3.2\cop4350 - project 3\circularlinkedlist.h(235): error C2227: left of '->next' must point to class/struct/union/generic type
+          type is 'unknown-type'
+c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 3\cop4350 - project 3.2\cop4350 - project 3\circularlinkedlist.h(251): error C2065: '_last' : undeclared identifier
+c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 3\cop4350 - project 3.2\cop4350 - project 3\circularlinkedlist.h(252): error C2065: '_last' : undeclared identifier
+c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 3\cop4350 - project 3.2\cop4350 - project 3\circularlinkedlist.h(252): error C2227: left of '->next' must point to class/struct/union/generic type
+          type is 'unknown-type'
+c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 3\cop4350 - project 3.2\cop4350 - project 3\circularlinkedlist.h(253): error C2065: '_last' : undeclared identifier
+c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 3\cop4350 - project 3.2\cop4350 - project 3\circularlinkedlist.h(254): error C2065: '_last' : undeclared identifier
+c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 3\cop4350 - project 3.2\cop4350 - project 3\circularlinkedlist.h(254): error C2227: left of '->next' must point to class/struct/union/generic type
+          type is 'unknown-type'

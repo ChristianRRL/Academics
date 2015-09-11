@@ -1,0 +1,23 @@
+﻿  main.cpp
+c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 6\cop4350 - project 6.4\cop4350 - project 6\maze.h(159): error C2784: 'unknown-type std::operator -(std::move_iterator<_RanIt> &,const std::move_iterator<_RanIt2> &)' : could not deduce template argument for 'std::move_iterator<_RanIt> &' from 'std::_List_iterator<std::_List_val<std::_List_simple_types<int>>>'
+          c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(1969) : see declaration of 'std::operator -'
+          c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 6\cop4350 - project 6.4\cop4350 - project 6\maze.h(154) : while compiling class template member function 'void Maze<int>::outputAdjacency(int)'
+          c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 6\cop4350 - project 6.4\cop4350 - project 6\main.cpp(58) : see reference to function template instantiation 'void Maze<int>::outputAdjacency(int)' being compiled
+          c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 6\cop4350 - project 6.4\cop4350 - project 6\main.cpp(40) : see reference to class template instantiation 'Maze<int>' being compiled
+          c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(1969) : see declaration of 'std::operator -'
+          c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(1969) : see declaration of 'std::operator -'
+          c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(1969) : see declaration of 'std::operator -'
+          c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(1969) : see declaration of 'std::operator -'
+c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 6\cop4350 - project 6.4\cop4350 - project 6\maze.h(159): error C2784: 'unknown-type std::operator -(const std::reverse_iterator<_RanIt> &,const std::reverse_iterator<_RanIt2> &)' : could not deduce template argument for 'const std::reverse_iterator<_RanIt> &' from 'std::_List_iterator<std::_List_val<std::_List_simple_types<int>>>'
+          c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(1130) : see declaration of 'std::operator -'
+          c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(1130) : see declaration of 'std::operator -'
+          c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(1130) : see declaration of 'std::operator -'
+          c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(1130) : see declaration of 'std::operator -'
+          c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(1130) : see declaration of 'std::operator -'
+c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 6\cop4350 - project 6.4\cop4350 - project 6\maze.h(159): error C2784: 'unknown-type std::operator -(const std::_Revranit<_RanIt,_Base> &,const std::_Revranit<_RanIt2,_Base2> &)' : could not deduce template argument for 'const std::_Revranit<_RanIt,_Base> &' from 'std::_List_iterator<std::_List_val<std::_List_simple_types<int>>>'
+          c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(937) : see declaration of 'std::operator -'
+          c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(937) : see declaration of 'std::operator -'
+          c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(937) : see declaration of 'std::operator -'
+          c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(937) : see declaration of 'std::operator -'
+          c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(937) : see declaration of 'std::operator -'
+c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 6\cop4350 - project 6.4\cop4350 - project 6\maze.h(159): error C2676: binary '-' : 'std::_List_iterator<std::_List_val<std::_List_simple_types<int>>>' does not define this operator or a conversion to a type acceptable to the predefined operator

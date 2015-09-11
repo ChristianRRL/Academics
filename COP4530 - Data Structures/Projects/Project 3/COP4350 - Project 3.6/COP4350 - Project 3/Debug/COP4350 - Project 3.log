@@ -1,0 +1,9 @@
+﻿  main.cpp
+c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 3\cop4350 - project 3.6\cop4350 - project 3\main.cpp(21): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 3\cop4350 - project 3.6\cop4350 - project 3\circularlinkedlist.h(447): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+          c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 3\cop4350 - project 3.6\cop4350 - project 3\circularlinkedlist.h(446) : while compiling class template member function 'int List<int>::randomInt(int) const'
+          c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 3\cop4350 - project 3.6\cop4350 - project 3\circularlinkedlist.h(312) : see reference to function template instantiation 'int List<int>::randomInt(int) const' being compiled
+          c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 3\cop4350 - project 3.6\cop4350 - project 3\circularlinkedlist.h(186) : while compiling class template member function 'List<int>::List(const List<int> &)'
+          c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 3\cop4350 - project 3.6\cop4350 - project 3\main.cpp(47) : see reference to function template instantiation 'List<int>::List(const List<int> &)' being compiled
+          c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 3\cop4350 - project 3.6\cop4350 - project 3\main.cpp(36) : see reference to class template instantiation 'List<int>' being compiled
+  COP4350 - Project 3.vcxproj -> C:\Users\Christian\OneDrive\USF Fall 2014\COP4530 - Data Structures\Projects\Project 3\COP4350 - Project 3.6\Debug\COP4350 - Project 3.exe

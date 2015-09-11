@@ -1,0 +1,6 @@
+﻿  main.cpp
+c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 6\cop4350 - project 6.2\cop4350 - project 6\maze.h(206): warning C4018: '>=' : signed/unsigned mismatch
+          c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 6\cop4350 - project 6.2\cop4350 - project 6\maze.h(162) : while compiling class template member function 'void Maze<int>::addAdjacency(int)'
+          c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 6\cop4350 - project 6.2\cop4350 - project 6\main.cpp(53) : see reference to function template instantiation 'void Maze<int>::addAdjacency(int)' being compiled
+          c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 6\cop4350 - project 6.2\cop4350 - project 6\main.cpp(40) : see reference to class template instantiation 'Maze<int>' being compiled
+  COP4350 - Project 6.vcxproj -> C:\Users\Christian\OneDrive\USF Fall 2014\COP4530 - Data Structures\Projects\Project 6\COP4350 - Project 6.2\Debug\COP4350 - Project 6.exe

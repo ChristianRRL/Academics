@@ -1,0 +1,16 @@
+﻿  main.cpp
+c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 6\cop4350 - project 6.9\cop4350 - project 6\maze.h(297): warning C4101: 'temp3' : unreferenced local variable
+          c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 6\cop4350 - project 6.9\cop4350 - project 6\maze.h(296) : while compiling class template member function 'void Maze<int>::directionHelper(std::stack<int,std::deque<_Ty,std::allocator<_Ty>>> &)'
+          with
+          [
+              _Ty=int
+          ]
+          c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 6\cop4350 - project 6.9\cop4350 - project 6\maze.h(383) : see reference to function template instantiation 'void Maze<int>::directionHelper(std::stack<int,std::deque<_Ty,std::allocator<_Ty>>> &)' being compiled
+          with
+          [
+              _Ty=int
+          ]
+          c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 6\cop4350 - project 6.9\cop4350 - project 6\maze.h(85) : while compiling class template member function 'Maze<int>::Maze(const int)'
+          c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 6\cop4350 - project 6.9\cop4350 - project 6\main.cpp(36) : see reference to function template instantiation 'Maze<int>::Maze(const int)' being compiled
+          c:\users\christian\onedrive\usf fall 2014\cop4530 - data structures\projects\project 6\cop4350 - project 6.9\cop4350 - project 6\main.cpp(36) : see reference to class template instantiation 'Maze<int>' being compiled
+  COP4350 - Project 6.vcxproj -> C:\Users\Christian\OneDrive\USF Fall 2014\COP4530 - Data Structures\Projects\Project 6\COP4350 - Project 6.9\Debug\COP4350 - Project 6.exe

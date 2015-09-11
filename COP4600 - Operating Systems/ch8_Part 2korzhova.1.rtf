@@ -1,0 +1,198 @@
+{\rtf1\ansi\ansicpg10000\lnbrkrule
+{\fonttbl
+{\f1\fnil\fcharset1\fprq0 Arial;}
+{\f2\fnil\fcharset1\fprq0 \uc1\u-211_\u-205_ \u-208_\u12468_\u12471_\u12483_\u12463_;}
+{\f3\fnil\fcharset1\fprq0 Helvetica;}
+{\f4\fnil\fcharset2\fprq0 Symbol;}
+{\f5\fnil\fcharset2\fprq0 Monotype Sorts;}
+{\f6\fnil\fcharset2\fprq0 Webdings;}
+}
+{\colortbl;
+\red0\green0\blue0;
+\red0\green102\blue153;
+\red0\green0\blue0;
+\red51\green102\blue255;
+\red255\green0\blue0;
+\red0\green0\blue255;
+}
+{\stylesheet
+{\s1\li770\fi-770\loch\af1\dbch\f2\cf1\lang1033\level1 heading 1;}
+{\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\level2 heading 2;}
+{\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\level3 heading 3;}
+{\s4\li3213\fi-513\loch\af1\dbch\f2\cf1\lang1033\level4 heading 4;}
+{\s5\li3985\fi-513\loch\af1\dbch\f2\cf1\lang1033\level5 heading 5;}
+{\s6\li5014\fi-514\loch\af1\dbch\f2\cf1\lang1033\level6 heading 6;}
+{\s7\li6043\fi-514\loch\af1\dbch\f2\cf1\lang1033\level7 heading 7;}
+{\s8\li7071\fi-514\loch\af1\dbch\f2\cf1\lang1033\level8 heading 8;}
+{\s9\li8100\fi-514\loch\af1\dbch\f2\cf1\lang1033\level9 heading 9;}
+}
+\pard\plain\ltrpar\s1\li770\fi-770\loch\af1\dbch\f2\cf1\lang1033 {\dbch\af2\loch\f1 \par 
+}\pard\plain\ltrpar\s1\li770\fi-770\loch\af1\dbch\f2\cf1\lang1033\li0\fi0\qc {\b\dbch\af2\loch\f1\fs92\cf2 Chapter 8:  Memory Management\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs43 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs43{\pntxtb n}}{\dbch\af2\loch\f3\fs48\cf3 Structure of the Page Table\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs43 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs43{\pntxtb n}}{\dbch\af2\loch\f3\fs48\cf3 Segmentation\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs43 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs43{\pntxtb n}}{\dbch\af2\loch\f3\fs48\cf3 Example: The Intel Pentium\par 
+}\pard\plain\ltrpar\s1\li770\fi-770\loch\af1\dbch\f2\cf1\lang1033\li0\fi0\qc {\b\dbch\af2\loch\f1\fs92\cf2 Memory Protection\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs43 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs43{\pntxtb n}}{\dbch\af2\loch\f3\fs48\cf3 Memory protection implemented by associating protection bit with each frame to indicate if read-only or read-write access is allowed\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs32 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs32{\pntxtb l}}{\dbch\af2\loch\f3\fs40\cf3 Can also add more bits to indicate page execute-only, and so on\line \par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs43 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs43{\pntxtb n}}{\b\dbch\af2\loch\f3\fs48\cf4 Valid-invalid}{\dbch\af2\loch\f3\fs48\cf4  }{\dbch\af2\loch\f3\fs48\cf3 bit attached to each entry in the page table:\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs32 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs32{\pntxtb l}}{\dbch\af2\loch\f3\fs40\cf3 \uc1\u8220\'d2valid\u8221\'d3 indicates that the associated page is in the process\u8217\'d5 logical address space, and is thus a legal page\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs32 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs32{\pntxtb l}}{\dbch\af2\loch\f3\fs40\cf3 \uc1\u8220\'d2invalid\u8221\'d3 indicates that the page is not in the process\u8217\'d5 logical address space\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs32 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs32{\pntxtb l}}{\dbch\af2\loch\f3\fs40\cf3 Or use page table length register ( PTLR)\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\dbch\af2\loch\f3\cf3 \par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs43 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs43{\pntxtb n}}{\dbch\af2\loch\f3\fs48\cf3 Any violations result in a trap to the kernel\par 
+}\pard\plain\ltrpar\s1\li770\fi-770\loch\af1\dbch\f2\cf1\lang1033\li0\fi0\qc {\b\dbch\af2\loch\f1\fs80\cf2 Valid (v) or Invalid (i) \line Bit In A Page Table\par 
+}\pard\plain\ltrpar\s1\li770\fi-770\loch\af1\dbch\f2\cf1\lang1033\li0\fi0\qc {\b\dbch\af2\loch\f1\fs92\cf2 Shared Pages\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs50 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs50{\pntxtb n}}{\b\dbch\af2\loch\f3\fs56\cf4 Shared code\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs38 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs38{\pntxtb l}}{\dbch\af2\loch\f3\fs48\cf3 One copy of read-only (}{\b\dbch\af2\loch\f3\fs48\cf4 reentrant}{\dbch\af2\loch\f3\fs48\cf3 ) code shared among processes (i.e., text editors, compilers, window systems)\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs38 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs38{\pntxtb l}}{\dbch\af2\loch\f3\fs48\cf3 Similar to multiple threads sharing the same process space\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs38 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs38{\pntxtb l}}{\dbch\af2\loch\f3\fs48\cf3 Also useful for }{\dbch\af2\loch\f3\fs48\cf3 interprocess}{\dbch\af2\loch\f3\fs48\cf3  communication if sharing of read-write pages is allowed\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\dbch\af2\loch\f3\cf3 \par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs50 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs50{\pntxtb n}}{\b\dbch\af2\loch\f3\fs56\cf4 Private code and data}{\dbch\af2\loch\f3\fs56\cf4  \par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs38 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs38{\pntxtb l}}{\dbch\af2\loch\f3\fs48\cf3 Each process keeps a separate copy of the code and data\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs38 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs38{\pntxtb l}}{\dbch\af2\loch\f3\fs48\cf3 The pages for the private code and data can appear anywhere in the logical address space\par 
+}\pard\plain\ltrpar\s1\li770\fi-770\loch\af1\dbch\f2\cf1\lang1033\li0\fi0\qc {\b\dbch\af2\loch\f1\fs92\cf2 Shared Pages Example}{\b\dbch\af2\loch\f1\fs68\cf2 \par 
+}\pard\plain\ltrpar\s1\li770\fi-770\loch\af1\dbch\f2\cf1\lang1033\li0\fi0\qc {\b\dbch\af2\loch\f1\fs92\cf2 Structure of the Page Table\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs50 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs50{\pntxtb n}}{\dbch\af2\loch\f3\fs56\cf3 Memory structures for paging can get huge using straight-forward methods\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs38 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs38{\pntxtb l}}{\dbch\af2\loch\f3\fs48\cf3 Consider a 32-bit logical address space as on modern computers\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs38 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs38{\pntxtb l}}{\dbch\af2\loch\f3\fs48\cf3 Page size of 4 KB (2}{\dbch\af2\loch\f3\fs48\super\cf3 12}{\dbch\af2\loch\f3\fs48\cf3 )\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs38 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs38{\pntxtb l}}{\dbch\af2\loch\f3\fs48\cf3 Page table would have 1 million entries (2}{\dbch\af2\loch\f3\fs48\super\cf3 32}{\dbch\af2\loch\f3\fs48\cf3  / 2}{\dbch\af2\loch\f3\fs48\super\cf3 12}{\dbch\af2\loch\f3\fs48\cf3 )\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs38 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs38{\pntxtb l}}{\dbch\af2\loch\f3\fs48\cf3 If each entry is 4 bytes -> 4 MB of physical address space / memory for page table alone\par 
+}\pard\plain\ltrpar\s4\li3213\fi-513\loch\af1\dbch\f2\cf1\lang1033\li2443 {\pntext\pard\plain\dbch\af2\loch\f6\fs30 4\tab}{\*\pn\pnlvlblt\pnf6\pnfs30{\pntxtb 4}}{\dbch\af2\loch\f3\fs40\cf3 That amount of memory used to cost a lot\par 
+}\pard\plain\ltrpar\s4\li3213\fi-513\loch\af1\dbch\f2\cf1\lang1033\li2443 {\pntext\pard\plain\dbch\af2\loch\f6\fs30 4\tab}{\*\pn\pnlvlblt\pnf6\pnfs30{\pntxtb 4}}{\dbch\af2\loch\f3\fs40\cf3 Don\uc1\u8217\'d5t want to allocate that contiguously in main memory\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\dbch\af2\loch\f3\cf3 \par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs50 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs50{\pntxtb n}}{\dbch\af2\loch\f3\fs56\cf3 Hierarchical Paging\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs50 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs50{\pntxtb n}}{\dbch\af2\loch\f3\fs56\cf3 Hashed Page Tables\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs50 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs50{\pntxtb n}}{\dbch\af2\loch\f3\fs56\cf3 Inverted Page Tables\par 
+}\pard\plain\ltrpar\s1\li770\fi-770\loch\af1\dbch\f2\cf1\lang1033\li0\fi0\qc {\b\dbch\af2\loch\f1\fs92\cf2 Hierarchical Page Tables\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs50 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs50{\pntxtb n}}{\dbch\af2\loch\f3\fs56\cf3 Break up the logical address space into multiple page tables\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\dbch\af2\loch\f3\fs56\cf3 \par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs50 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs50{\pntxtb n}}{\dbch\af2\loch\f3\fs56\cf3 A simple technique is a two-level page table\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\dbch\af2\loch\f3\fs56\cf3 \par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs50 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs50{\pntxtb n}}{\dbch\af2\loch\f3\fs56\cf3 We then page the page table\par 
+}\pard\plain\ltrpar\s1\li770\fi-770\loch\af1\dbch\f2\cf1\lang1033\li0\fi0\qc {\b\dbch\af2\loch\f1\fs92\cf2 Two-Level Page-Table Scheme}{\b\dbch\af2\loch\f1\fs68\cf2 \par 
+}\pard\plain\ltrpar\s1\li770\fi-770\loch\af1\dbch\f2\cf1\lang1033\li0\fi0\qc {\b\dbch\af2\loch\f1\fs92\cf2 Two-Level Paging Example\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs43 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs43{\pntxtb n}}{\dbch\af2\loch\f3\fs48\cf3 A logical address (on 32-bit machine with 1K page size) is divided into:\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1413\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs38 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs38{\pntxtb l}}{\dbch\af2\loch\f3\fs48\cf3 a page number consisting of 22 bits\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1413\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs38 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs38{\pntxtb l}}{\dbch\af2\loch\f3\fs48\cf3 a page offset consisting of 10 bits\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1413\fi-643 {\dbch\af2\loch\f3\fs22\cf3 \par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs50 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs50{\pntxtb n}}{\dbch\af2\loch\f3\fs56\cf3 Since the page table is paged, the page number is further divided into:\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1413\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs38 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs38{\pntxtb l}}{\dbch\af2\loch\f3\fs48\cf3 a 12-bit page number \par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1413\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs38 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs38{\pntxtb l}}{\dbch\af2\loch\f3\fs48\cf3 a 10-bit page offset\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1413\fi-643 {\dbch\af2\loch\f3\fs22\cf3 \par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs50 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs50{\pntxtb n}}{\dbch\af2\loch\f3\fs56\cf3 Thus, a logical address is as follows:\line }{\dbch\af2\loch\f3\fs46\cf3 \line \line \line \line \par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs50 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs50{\pntxtb n}}{\dbch\af2\loch\f3\fs56\cf3 where}{\i\dbch\af2\loch\f3\fs56\cf3  p}{\i\dbch\af2\loch\f3\fs56\sub\cf3 1}{\dbch\af2\loch\f3\fs56\cf3  is an index into the outer page table, and }{\i\dbch\af2\loch\f3\fs56\cf3 p}{\i\dbch\af2\loch\f3\fs56\sub\cf3 2}{\dbch\af2\loch\f3\fs56\cf3  is the displacement within the page of the inner page table\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs50 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs50{\pntxtb n}}{\dbch\af2\loch\f3\fs56\cf3 Known as }{\b\dbch\af2\loch\f3\fs56\cf4 forward-mapped page table\par 
+}\pard\plain\ltrpar\s1\li770\fi-770\loch\af1\dbch\f2\cf1\lang1033\li0\fi0\qc {\b\dbch\af2\loch\f1\fs92\cf2 Address-Translation Scheme}{\b\dbch\af2\loch\f1\fs68\cf2 \par 
+}\pard\plain\ltrpar\s1\li770\fi-770\loch\af1\dbch\f2\cf1\lang1033\li0\fi0\qc {\b\dbch\af2\loch\f1\fs92\cf2 64-bit Logical Address Space\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs50 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs50{\pntxtb n}}{\dbch\af2\loch\f3\fs56\cf3 Even two-level paging scheme not sufficient\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs50 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs50{\pntxtb n}}{\dbch\af2\loch\f3\fs56\cf3 If page size is 4 KB (2}{\dbch\af2\loch\f3\fs56\super\cf3 12}{\dbch\af2\loch\f3\fs56\cf3 )\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs38 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs38{\pntxtb l}}{\dbch\af2\loch\f3\fs48\cf3 Then page table has 2}{\dbch\af2\loch\f3\fs48\super\cf3 52}{\dbch\af2\loch\f3\fs48\cf3  entries\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs38 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs38{\pntxtb l}}{\dbch\af2\loch\f3\fs48\cf3 If two level scheme, inner page tables could be 2}{\dbch\af2\loch\f3\fs48\super\cf3 10}{\dbch\af2\loch\f3\fs48\cf3  4-byte entries\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs38 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs38{\pntxtb l}}{\dbch\af2\loch\f3\fs48\cf3 Address would look like\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\dbch\af2\loch\f3\cf3 \par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\dbch\af2\loch\f3\cf3 \par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\dbch\af2\loch\f3\cf3 \par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\dbch\af2\loch\f3\cf3 \par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\dbch\af2\loch\f3\cf3 \par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs38 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs38{\pntxtb l}}{\dbch\af2\loch\f3\fs48\cf3 Outer page table has 2}{\dbch\af2\loch\f3\fs48\super\cf3 42}{\dbch\af2\loch\f3\fs48\cf3  entries or 2}{\dbch\af2\loch\f3\fs48\super\cf3 44}{\dbch\af2\loch\f3\fs48\cf3  bytes\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs38 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs38{\pntxtb l}}{\dbch\af2\loch\f3\fs48\cf3 One solution is to add a 2}{\dbch\af2\loch\f3\fs48\super\cf3 nd}{\dbch\af2\loch\f3\fs48\cf3  outer page table\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs38 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs38{\pntxtb l}}{\dbch\af2\loch\f3\fs48\cf3 But in the following example the 2}{\dbch\af2\loch\f3\fs48\super\cf3 nd}{\dbch\af2\loch\f3\fs48\cf3  outer page table is still 2}{\dbch\af2\loch\f3\fs48\super\cf3 34}{\dbch\af2\loch\f3\fs48\cf3  bytes in size\par 
+}\pard\plain\ltrpar\s4\li3213\fi-513\loch\af1\dbch\f2\cf1\lang1033\li2443 {\pntext\pard\plain\dbch\af2\loch\f6\fs30 4\tab}{\*\pn\pnlvlblt\pnf6\pnfs30{\pntxtb 4}}{\dbch\af2\loch\f3\fs40\cf3 And possibly 4 memory access to get to one physical memory location\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\dbch\af2\loch\f3\cf3 \par 
+}\pard\plain\ltrpar\s1\li770\fi-770\loch\af1\dbch\f2\cf1\lang1033\li0\fi0\qc {\b\dbch\af2\loch\f1\fs92\cf2 Three-level Paging Scheme\par 
+}\pard\plain\ltrpar\s1\li770\fi-770\loch\af1\dbch\f2\cf1\lang1033\li0\fi0\qc {\b\dbch\af2\loch\f1\fs92\cf2 Hashed Page Tables\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs43 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs43{\pntxtb n}}{\dbch\af2\loch\f3\fs48\cf3 Common in address spaces > 32 bits\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\dbch\af2\loch\f3\fs48\cf3 \par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs43 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs43{\pntxtb n}}{\dbch\af2\loch\f3\fs48\cf3 The virtual page number is hashed into a page table\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs32 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs32{\pntxtb l}}{\dbch\af2\loch\f3\fs40\cf3 This page table contains a chain of elements hashing to the same location\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\dbch\af2\loch\f3\cf3 \par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs43 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs43{\pntxtb n}}{\dbch\af2\loch\f3\fs48\cf3 Each element contains (1) the virtual page number (2) the value of the mapped page frame (3) a pointer to the next element\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\dbch\af2\loch\f3\fs48\cf3 \par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs43 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs43{\pntxtb n}}{\dbch\af2\loch\f3\fs48\cf3 Virtual page numbers are compared in this chain searching for a match\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs32 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs32{\pntxtb l}}{\dbch\af2\loch\f3\fs40\cf3 If a match is found, the corresponding physical frame is extracted\par 
+}\pard\plain\ltrpar\s1\li770\fi-770\loch\af1\dbch\f2\cf1\lang1033\li0\fi0\qc {\b\dbch\af2\loch\f1\fs92\cf2 Hashed Page Table}{\b\dbch\af2\loch\f1\fs68\cf2 \par 
+}\pard\plain\ltrpar\s1\li770\fi-770\loch\af1\dbch\f2\cf1\lang1033\li0\fi0\qc {\b\dbch\af2\loch\f1\fs92\cf2 Inverted Page Table\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs43 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs43{\pntxtb n}}{\dbch\af2\loch\f3\fs48\cf3 Rather than each process having a page table and keeping track of all possible logical pages, track all physical pages\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\dbch\af2\loch\f3\fs48\cf3 \par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs43 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs43{\pntxtb n}}{\dbch\af2\loch\f3\fs48\cf3 One entry for each real frame of memory\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\dbch\af2\loch\f3\fs48\cf3 \par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs43 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs43{\pntxtb n}}{\dbch\af2\loch\f3\fs48\cf3 Entry consists of the virtual address of the page stored in that real memory location, with information about the process that owns that page\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\dbch\af2\loch\f3\fs48\cf3 \par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs43 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs43{\pntxtb n}}{\dbch\af2\loch\f3\fs48\cf3 Decreases memory needed to store each page table, but increases time needed to search the table when a page reference occurs\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\dbch\af2\loch\f3\fs48\cf3 \par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs43 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs43{\pntxtb n}}{\dbch\af2\loch\f3\fs48\cf3 Use hash table to limit the search to one \uc1\u8212\'d1 or at most a few \u8212\'d1 page-table entries\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs32 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs32{\pntxtb l}}{\dbch\af2\loch\f3\fs40\cf3 TLB can accelerate access\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs43 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs43{\pntxtb n}}{\dbch\af2\loch\f3\fs48\cf3 But how to implement shared memory?\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs32 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs32{\pntxtb l}}{\dbch\af2\loch\f3\fs40\cf3 One mapping of a virtual address to the shared physical address\par 
+}\pard\plain\ltrpar\s1\li770\fi-770\loch\af1\dbch\f2\cf1\lang1033\li0\fi0\qc {\b\dbch\af2\loch\f1\fs92\cf2 Inverted Page Table Architecture}{\b\dbch\af2\loch\f1\fs68\cf2 \par 
+}\pard\plain\ltrpar\s1\li770\fi-770\loch\af1\dbch\f2\cf1\lang1033\li0\fi0\qc {\b\dbch\af2\loch\f1\fs92\cf2 Segmentation\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs50 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs50{\pntxtb n}}{\dbch\af2\loch\f3\fs56\cf3 Memory-management scheme that supports user view of memory \par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\dbch\af2\loch\f3\fs56\cf3 \par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs50 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs50{\pntxtb n}}{\dbch\af2\loch\f3\fs56\cf3 A program is a collection of segments\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs38 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs38{\pntxtb l}}{\dbch\af2\loch\f3\fs48\cf3 A segment is a logical unit such as:\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\dbch\af2\loch\f3\cf3 \tab \tab }{\dbch\af2\loch\f3\fs48\cf3 main program\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\dbch\af2\loch\f3\fs48\cf3 \tab \tab procedure \par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\dbch\af2\loch\f3\fs48\cf3 \tab \tab function\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\dbch\af2\loch\f3\fs48\cf3 \tab \tab method\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\dbch\af2\loch\f3\fs48\cf3 \tab \tab object\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\dbch\af2\loch\f3\fs48\cf3 \tab \tab local variables, global variables\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\dbch\af2\loch\f3\fs48\cf3 \tab \tab common block\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\dbch\af2\loch\f3\fs48\cf3 \tab \tab stack\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\dbch\af2\loch\f3\fs48\cf3 \tab \tab symbol table\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\dbch\af2\loch\f3\fs48\cf3 \tab \tab arrays\par 
+}\pard\plain\ltrpar\s1\li770\fi-770\loch\af1\dbch\f2\cf1\lang1033\li0\fi0\qc {\b\dbch\af2\loch\f1\fs92\cf2 User\uc1\u8217\'d5s View of a Program}{\b\dbch\af2\loch\f1\fs68\cf2 \par 
+}\pard\plain\ltrpar\s1\li770\fi-770\loch\af1\dbch\f2\cf1\lang1033\li0\fi0\qc {\b\dbch\af2\loch\f1\fs92\cf2 Logical View of Segmentation\par 
+}\pard\plain\ltrpar\s1\li770\fi-770\loch\af1\dbch\f2\cf1\lang1033\li0\fi0\qc {\b\dbch\af2\loch\f1\fs92\cf2 Segmentation Architecture \par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs43 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs43{\pntxtb n}}{\dbch\af2\loch\f3\fs48\cf3 Logical address consists of a two tuple:\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\dbch\af2\loch\f3\fs48\cf3 \tab \tab <segment-number, offset>,\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\dbch\af2\loch\f3\fs48\cf3 \par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs43 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs43{\pntxtb n}}{\b\dbch\af2\loch\f3\fs48\cf4 Segment table}{\dbch\af2\loch\f3\fs48\cf4  }{\dbch\af2\loch\f3\fs48\cf3 \uc1\u8211\'d0 maps two-dimensional physical addresses; each table entry has:\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs32 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs32{\pntxtb l}}{\b\dbch\af2\loch\f3\fs40\cf4 base}{\dbch\af2\loch\f3\fs40\cf4  }{\dbch\af2\loch\f3\fs40\cf3 \uc1\u8211\'d0 contains the starting physical address where the segments reside in memory\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs32 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs32{\pntxtb l}}{\b\dbch\af2\loch\f3\fs40\cf4 limit}{\dbch\af2\loch\f3\fs40\cf4  }{\dbch\af2\loch\f3\fs40\cf3 \uc1\u8211\'d0 specifies the length of the segment\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\dbch\af2\loch\f3\fs22\cf3 \par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs43 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs43{\pntxtb n}}{\b\dbch\af2\loch\f3\fs48\cf4 Segment-table base register (STBR)}{\dbch\af2\loch\f3\fs48\cf4  }{\dbch\af2\loch\f3\fs48\cf3 points to the segment table\uc1\u8217\'d5s location in memory\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\dbch\af2\loch\f3\fs48\cf3 \par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs43 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs43{\pntxtb n}}{\b\dbch\af2\loch\f3\fs48\cf4 Segment-table length register (STLR)}{\dbch\af2\loch\f3\fs48\cf4  }{\dbch\af2\loch\f3\fs48\cf3 indicates number of segments used by a program;\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\dbch\af2\loch\f3\cf3 \tab                   }{\dbch\af2\loch\f3\fs40\cf3 segment number }{\b\i\dbch\af2\loch\f3\fs40\cf5 s}{\dbch\af2\loch\f3\fs40\cf3  is legal if }{\b\i\dbch\af2\loch\f3\fs40\cf5 s}{\dbch\af2\loch\f3\fs40\cf3  < }{\b\dbch\af2\loch\f3\fs40\cf5 STLR\par 
+}\pard\plain\ltrpar\s1\li770\fi-770\loch\af1\dbch\f2\cf1\lang1033\li0\fi0\qc {\b\dbch\af2\loch\f1\fs92\cf2 Segmentation Architecture (Cont.)\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs43 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs43{\pntxtb n}}{\dbch\af2\loch\f3\fs48\cf3 Memory protection in a segmentation system\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs38 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs38{\pntxtb l}}{\dbch\af2\loch\f3\fs48\cf3 The virtual segment number, s, is compared against the Segment Table Length Register\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs38 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs38{\pntxtb l}}{\dbch\af2\loch\f3\fs48\cf3 The virtual displacement, d, is compared to the size of the segment length\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs38 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs38{\pntxtb l}}{\dbch\af2\loch\f3\fs48\cf3 Read, write, execute bits are set in the slot for the segment s\par 
+}\pard\plain\ltrpar\s1\li770\fi-770\loch\af1\dbch\f2\cf1\lang1033\li0\fi0\qc {\b\dbch\af2\loch\f1\fs92\cf2 Segmentation Architecture (Cont.)\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs43 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs43{\pntxtb n}}{\dbch\af2\loch\f3\fs48\cf3 Protection\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs32 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs32{\pntxtb l}}{\dbch\af2\loch\f3\fs40\cf3 With each entry in segment table associate:\par 
+}\pard\plain\ltrpar\s4\li3213\fi-513\loch\af1\dbch\f2\cf1\lang1033\li2443 {\pntext\pard\plain\dbch\af2\loch\f6\fs27 4\tab}{\*\pn\pnlvlblt\pnf6\pnfs27{\pntxtb 4}}{\dbch\af2\loch\f3\cf3 validation bit = 0 }{\loch\af3\dbch\f2\cf3 {\field{\*\fldinst SYMBOL 222 \\f "Symbol" \\s 18}{\fldrslt\f4}}}{\dbch\af2\loch\f3\cf3  illegal segment\par 
+}\pard\plain\ltrpar\s4\li3213\fi-513\loch\af1\dbch\f2\cf1\lang1033\li2443 {\pntext\pard\plain\dbch\af2\loch\f6\fs27 4\tab}{\*\pn\pnlvlblt\pnf6\pnfs27{\pntxtb 4}}{\dbch\af2\loch\f3\cf3 read/write/execute privileges\par 
+}\pard\plain\ltrpar\s4\li3213\fi-513\loch\af1\dbch\f2\cf1\lang1033\li2443 {\dbch\af2\loch\f3\cf3 \par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs43 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs43{\pntxtb n}}{\dbch\af2\loch\f3\fs48\cf3 Protection bits associated with segments; code sharing occurs at segment level\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\dbch\af2\loch\f3\fs48\cf3 \par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs43 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs43{\pntxtb n}}{\dbch\af2\loch\f3\fs48\cf3 Since segments vary in length, memory allocation is a dynamic storage-allocation problem\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\dbch\af2\loch\f3\fs48\cf3 \par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs43 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs43{\pntxtb n}}{\dbch\af2\loch\f3\fs48\cf3 A segmentation example is shown in the following diagram\par 
+}\pard\plain\ltrpar\s1\li770\fi-770\loch\af1\dbch\f2\cf1\lang1033\li0\fi0\qc {\b\dbch\af2\loch\f1\fs92\cf2 Segmentation Hardware}{\b\dbch\af2\loch\f1\fs68\cf2 \par 
+}\pard\plain\ltrpar\s1\li770\fi-770\loch\af1\dbch\f2\cf1\lang1033\li0\fi0\qc {\b\dbch\af2\loch\f1\fs92\cf2 Example of Segmentation}{\b\dbch\af2\loch\f1\fs68\cf2 \par 
+}\pard\plain\ltrpar\s1\li770\fi-770\loch\af1\dbch\f2\cf1\lang1033\li0\fi0\qc {\b\dbch\af2\loch\f1\fs92\cf2 Example: The Intel Pentium\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs43 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs43{\pntxtb n}}{\dbch\af2\loch\f3\fs48\cf3 Supports both segmentation and segmentation with paging\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs32 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs32{\pntxtb l}}{\dbch\af2\loch\f3\fs40\cf3 Each segment can be 4 GB\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs32 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs32{\pntxtb l}}{\dbch\af2\loch\f3\fs40\cf3 Up to 16 K segments per process\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs32 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs32{\pntxtb l}}{\dbch\af2\loch\f3\fs40\cf3 Divided into two partitions\par 
+}\pard\plain\ltrpar\s4\li3213\fi-513\loch\af1\dbch\f2\cf1\lang1033\li2443 {\pntext\pard\plain\dbch\af2\loch\f6\fs27 4\tab}{\*\pn\pnlvlblt\pnf6\pnfs27{\pntxtb 4}}{\dbch\af2\loch\f3\cf3 First partition of up to 8 K segments are private to process (kept in }{\b\dbch\af2\loch\f3\cf4 local descriptor table LDT}{\dbch\af2\loch\f3\cf3 )\par 
+}\pard\plain\ltrpar\s4\li3213\fi-513\loch\af1\dbch\f2\cf1\lang1033\li2443 {\pntext\pard\plain\dbch\af2\loch\f6\fs27 4\tab}{\*\pn\pnlvlblt\pnf6\pnfs27{\pntxtb 4}}{\dbch\af2\loch\f3\cf3 Second partition of up to 8K segments shared among all processes (kept in }{\b\dbch\af2\loch\f3\cf4 global descriptor table GDT}{\dbch\af2\loch\f3\cf3 )\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\dbch\af2\loch\f3\cf3 \par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\pntext\pard\plain\dbch\af2\loch\f5\fs43 n\tab}{\*\pn\pnlvlblt\pnf5\pnfs43{\pntxtb n}}{\dbch\af2\loch\f3\fs48\cf3 CPU generates logical address\par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs32 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs32{\pntxtb l}}{\dbch\af2\loch\f3\fs40\cf3 Given to segmentation unit\par 
+}\pard\plain\ltrpar\s4\li3213\fi-513\loch\af1\dbch\f2\cf1\lang1033\li2443 {\pntext\pard\plain\dbch\af2\loch\f6\fs27 4\tab}{\*\pn\pnlvlblt\pnf6\pnfs27{\pntxtb 4}}{\dbch\af2\loch\f3\cf3 Which produces linear addresses \par 
+}\pard\plain\ltrpar\s3\li2443\fi-513\loch\af1\dbch\f2\cf1\lang1033\li1670\fi-643 {\pntext\pard\plain\dbch\af2\loch\f5\fs32 l\tab}{\*\pn\pnlvlblt\pnf5\pnfs32{\pntxtb l}}{\dbch\af2\loch\f3\fs40\cf3 Linear address given to paging unit\par 
+}\pard\plain\ltrpar\s4\li3213\fi-513\loch\af1\dbch\f2\cf1\lang1033\li2443 {\pntext\pard\plain\dbch\af2\loch\f6\fs27 4\tab}{\*\pn\pnlvlblt\pnf6\pnfs27{\pntxtb 4}}{\dbch\af2\loch\f3\cf3 Which generates physical address in main memory\par 
+}\pard\plain\ltrpar\s4\li3213\fi-513\loch\af1\dbch\f2\cf1\lang1033\li2443 {\pntext\pard\plain\dbch\af2\loch\f6\fs27 4\tab}{\*\pn\pnlvlblt\pnf6\pnfs27{\pntxtb 4}}{\dbch\af2\loch\f3\cf3 Paging units form equivalent of MMU\par 
+}\pard\plain\ltrpar\s4\li3213\fi-513\loch\af1\dbch\f2\cf1\lang1033\li2443 {\pntext\pard\plain\dbch\af2\loch\f6\fs27 4\tab}{\*\pn\pnlvlblt\pnf6\pnfs27{\pntxtb 4}}{\dbch\af2\loch\f3\cf3 Pages sizes can be 4 KB or 4 MB\par 
+}\pard\plain\ltrpar\s2\li1670\fi-643\loch\af1\dbch\f2\cf1\lang1033\li770\fi-770 {\dbch\af2\loch\f3\cf3 \par 
+}\pard\plain\ltrpar\s1\li770\fi-770\loch\af1\dbch\f2\cf1\lang1033\li0\fi0\qc {\b\dbch\af2\loch\f1\fs80\cf2 Logical to Physical Address \line Translation in Pentium\par 
+}\pard\plain\ltrpar\s1\li770\fi-770\loch\af1\dbch\f2\cf1\lang1033\li0\fi0\qc {\b\dbch\af2\loch\f1\fs92\cf2 Intel Pentium Segmentation\par 
+}\pard\plain\ltrpar\s1\li770\fi-770\loch\af1\dbch\f2\cf1\lang1033\li0\fi0\qc {\b\dbch\af2\loch\f1\fs92\cf2 Pentium Paging Architecture\par 
+}\pard\plain\ltrpar\s1\li770\fi-770\loch\af1\dbch\f2\cf1\lang1033\li0\fi0\qc {\b\dbch\af2\loch\f1\fs92\cf2 Linear Address in Linux\par 
+}\pard\plain\ltrpar\s1\li770\fi-770\loch\af1\dbch\f2\cf1\lang1033\li0\fi0\qc {\b\dbch\af2\loch\f1\fs92\cf2 Three-level Paging in Linux\par 
+}\pard\plain\ltrpar\s1\li770\fi-770\loch\af1\dbch\f2\cf1\lang1033\li0\fi0\qc {\b\dbch\af2\loch\f1\fs122\cf2 End of Chapter 8\par 
+}
+}
